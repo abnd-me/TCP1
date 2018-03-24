@@ -11,3 +11,11 @@ String str="",str2="";
     while(!str.equals("stop")){  
     str=br.readLine();  
     dout.writeUTF(str);
+ dout.flush();  
+    str2=din.readUTF();  
+    System.out.println("Server says: "+str2);  
+    }  
+      
+    dout.close();  
+    s.close();  
+    }}  
