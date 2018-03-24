@@ -14,4 +14,8 @@ System.out.println("client says: "+str);
     str2=br.readLine();  
     dout.writeUTF(str2);  
     dout.flush();  
-    }  
+    }
+ din.close();  
+    s.close();  
+    ss.close();  
+    }}   
